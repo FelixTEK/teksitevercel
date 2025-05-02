@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>TEKSite</title>
         <link rel="icon" type="image/x-icon" href="favicon/favicon.ico" sizes="64x64">
         <!--CSS files-->
@@ -12,56 +12,14 @@
     </head>
     
     <body>
-        <!--JavaScript-->
-        <script>
-          function clickhandlerL()
-          {
-            var buttonl = document.getElementById("buttonL");
-            buttonl.textContent = "I said it was a secret.";
-          }
-
-          function clickhandlerR()
-          {
-            var buttonr = document.getElementById("buttonR");
-            buttonr.textContent = "Please I beg you to stop.";
-          }
-
-          function clickhandlerHome()
-          {
-            var home = document.getElementById("buttonHome");
-            home.textContent = "You";
-          }
-
-          function clickhandlerLogin()
-          {
-            var login = document.getElementById("buttonLogin");
-            login.textContent = "Won't";
-          }
-
-          function clickhandlerSignUp()
-          {
-            var signup = document.getElementById("buttonSignUp");
-            signup.textContent = "Know";
-          }
-
-          async function checkheader(){
-            if (home.textContent=="You" && login.textContent=="Won't" && signup.textContent=="Know")
-          {
-            var headertext = getElementById("headertext");
-            headertext.textContent = "LOL";
-          }
-          }
-
-        </script>
-
         <!--NavbarNEW-->
         <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
           <div class="container">
             <a class="navbar-brand d-md-none" href="#">
                 <ul class="navbar-nav flex-grow-1 justify-content-between">
-                  <li class="nav-item"><a class="nav-link active" aria-current="page" id="buttonHome" onclick="clickhandlerHome()">Home</a></li>
-                  <li class="nav-item"><a class="nav-link" id="buttonLogin" onclick="clickhandlerLogin()">Login</a></li>
-                  <li class="nav-item"><a class="nav-link" id="buttonSignUp" onclick="clickhandlerSignUp()">Sign up</a></li>
+                  <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                  <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                  <li class="nav-item"><a href="signup.html" class="nav-link">Sign up</a></li>
                 </ul>
               </div>
             </div>
@@ -71,13 +29,13 @@
 
         <!-- Hero -->
   	    <div class="px-5 py-5 my-5 text-center">
-            <!--img class="d-block mx-auto mb-4" src="./img/felixtek.png" alt="" id="logo" width="640"-->
-            <h1 class="display-5 fw-bold text-body-emphasis" id="headertext">hhhasdh</h1>
+            <img class="d-block mx-auto mb-4" src="./img/felixtek.png" alt="" height="240">
+            <h1 class="display-5 fw-bold text-body-emphasis">Welcome to FelixTEK's Home!</h1>
             <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4">It's all but a secret for now.</p>
+                <p class="lead mb-4">Greetings, travelers of the interwebs! You have ventured into a whimsical place, known as the TEKSite! The home of FelixTEK! This is where contact with FelixTEK is re-routed to.</p>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3" id="buttonL" onclick="clickhandlerL()">Don't</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4" id="buttonR" onclick="clickhandlerR()">Click</button>
+                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3" onclick="location.href='https://discord.gg/DhDsQZfkNK'">Discord</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4" onclick="location.href='https://www.youtube.com/@felixtek636/videos'">Youtube</button>
                 </div>
             </div>
         </div>
@@ -85,21 +43,20 @@
 
         <!--Footer-->
         <div class="container">
-          <footer class="d-flex flex-wrap justify-content-between align-items-start py-3 border-top fixed-bottom text-bg-light p-3">
-            <div class="d-flex align-items-start mx-auto">
-              <a href = "404.html" s="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top fixed-bottom text-bg-light p-3">
+            <div class="d-flex align-items-center mx-auto">
+              <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
                 <img class="bi" height="30" src="./img/circletek.png"><use xlink:href="index.html"></use></img>
               </a>
-              <span class="mb-3 mb-md-0 text-body-secondary justify-content-end list-unstyled d-flex">© 2023-2024 FelixTEK. Well what do you think you're seeing here? Nothing, of course! Shoo!</span>
+              <span class="mb-3 mb-md-0 text-body-secondary justify-content-end list-unstyled d-flex">© 2023-2024 FelixTEK. The Login and Signup pages are for testing only and are not operational.</span>
             </div>
             
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex mx-auto">
-              <li class="ms-3"><a class="text-body-secondary" href="https://discord.gg"><svg class="bi" width="30" height="30"><img src="svg/discord.svg"></img></svg></a></li>
-              <li class="ms-3"><a class="text-body-secondary" href="https://www.youtube.com"><svg class="bi" width="30" height="30"><img src="svg/youtube.svg"></img></svg></a></li>
+              <li class="ms-3"><a class="text-body-secondary" href="https://discord.gg/PXujPdFaMt"><svg class="bi" width="30" height="30"><img src="svg/discord.svg"></img></svg></a></li>
+              <li class="ms-3"><a class="text-body-secondary" href="https://www.youtube.com/@felixtek636/videos"><svg class="bi" width="30" height="30"><img src="svg/youtube.svg"></img></svg></a></li>
             </ul>
           </footer>
         </div>
-
         <!--Footer-->
 
     </body>
